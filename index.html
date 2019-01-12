@@ -9,8 +9,17 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href=style.css" rel="stylesheet" type="text/css">
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
-        <?php include('navBar.php'); ?>
+        <div id="nav" />
+
+
+        <script>
+            $(function(){
+                $("#nav").load("fragments/navBar.html");
+            });
+        </script>
     </body>
 </html>
