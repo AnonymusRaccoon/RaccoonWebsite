@@ -2,11 +2,13 @@
 .nav-content 
 {
     display: none;
+    background-color: #00ff00;
 }
 @include media-breakpoint-up(sm)
 {
     .nav-content
     {
-        display: flex; 
+        display: flex;
+        background-color: #ff0000;
     }
 }
