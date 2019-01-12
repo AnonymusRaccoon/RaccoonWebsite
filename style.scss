@@ -1,0 +1,12 @@
+/* Navigation bar */
+.nav-content 
+{
+    display: none;
+}
+@include media-breakpoint-up(sm)
+{
+    .nav-content
+    {
+        display: flex; 
+    }
+}
