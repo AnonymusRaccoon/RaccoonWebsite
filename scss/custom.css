@@ -10400,4 +10400,9 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+.cover {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 /*# sourceMappingURL=custom.css.map */
