@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <title>MusicApp - RaccoonSDG</title>
-        <link rel="shortcut icon" type="image/png" href="../drawables/icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="../drawables/MusicApp/icon.png"/>
 
         <link rel="stylesheet" href="../scss/custom.css" type="text/css">
         <link rel="stylesheet" href="../style.css" type="text/css">
@@ -14,15 +14,27 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
-        <div id="nav"></div>
+        <div id="nav" style="height: 56px;"></div>
 
         <main role="main">
-            <div class="container">
-                <div class="row align-items-center text-center">
-                    <div class="col-6 mx-auto cover">
+            <div class="container-fluid cover" style="background-image: url(../drawables/MusicApp/Header.jpg);">
+                <div class="row align-items-center text-center text-light">
+                    <div class="col-6 mx-auto">
                         <h1>MusicApp</h1>
                         <p>A music player for android whitch can play both youtube songs and local songs.</p>
                         <a id="download" href="https://github.com/AnonymusRaccoon/MusicApp/releases/latest" ><button type="button" class="btn btn-outline-primary">Download</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2 mx-auto p-1 p-md-4 section-img">
+                        <img src="../drawables/MusicApp/icon.png" />
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <h2>Download songs / Sync playlists</h2>
+                        <p>The app allow you to download the audio of any existing video on youtube. You can download songs one by one or you can download a whole playlist.
+                        <br/><br/>You can also keep a playlist synced. So every update made to the youtube playlist will be applyed to your downloaded playlist.</p>
                     </div>
                 </div>
                 <br>

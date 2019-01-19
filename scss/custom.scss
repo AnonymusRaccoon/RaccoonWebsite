@@ -9,6 +9,24 @@ $theme-colors: (
 
 .cover
 {
+  background-size: cover;
+  background-color: #3d3d3d;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.section-img
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2
+{
+  color: theme-color("primary");
+  padding-bottom: 1rem;
 }

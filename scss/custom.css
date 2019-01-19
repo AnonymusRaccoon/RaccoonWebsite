@@ -10402,7 +10402,29 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .cover {
+  background-size: cover;
+  background-color: #3d3d3d;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.section-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h2 {
+  color: #3949AB;
+  padding-bottom: 1rem;
 }
 /*# sourceMappingURL=custom.css.map */
