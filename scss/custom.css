@@ -10427,4 +10427,11 @@ h2 {
   color: #3949AB;
   padding-bottom: 1rem;
 }
+
+.screenshot {
+  display: inline-block;
+  height: 30rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 /*# sourceMappingURL=custom.css.map */
