@@ -31,6 +31,17 @@ h2
   padding-bottom: 1rem;
 }
 
+.screenshots
+{
+  overflow-x: auto;
+  white-space: nowrap;
+
+  :hover
+  {
+    cursor: pointer;
+  }
+}
+
 .screenshot
 {
   display: inline-block;
