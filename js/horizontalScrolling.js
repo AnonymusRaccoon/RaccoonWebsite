@@ -22,7 +22,10 @@ sliders.forEach((slider) =>
             else
                 document.getElementById("left-scroll").style.display = "inline-block";
             
-            
+            if (slider.scrollLeft + 10 >= slider.scrollWidth - slider.clientWidth)
+                document.getElementById("right-scroll").style.display = "none";
+            else
+                document.getElementById("right-scroll").style.display = "inline-block";
         }
     });
     
@@ -40,7 +43,7 @@ sliders.forEach((slider) =>
         slider.scrollBy({ top: 0, left: -slider.offsetWidth * 0.66, behavior: "smooth" });
         document.getElementById("right-scroll").style.display = "inline-block";
 
-        if (slider.scrollLeft == 0)
+        if (slider.scrollLeft - slider.offsetWidth * 0.66 <= 0)
             document.getElementById("left-scroll").style.display = "none";            
     }
 
@@ -49,10 +52,10 @@ sliders.forEach((slider) =>
         slider.scrollBy({ top: 0, left: slider.offsetWidth * 0.66, behavior: "smooth" });
         document.getElementById("left-scroll").style.display = "inline-block";
 
-        console.log("Offset: " + slider.scrollWidth);
+        console.log("Offset: " + (slider.scrollWidth - slider.clientWidth));
         console.log("Scroll: " + slider.scrollLeft);
 
-        if (slider.scrollLeft == slider.scrollWidth)
+        if (slider.scrollLeft + slider.offsetWidth * 0.66 + 10 >= slider.scrollWidth - slider.clientWidth)
             document.getElementById("right-scroll").style.display = "none";
     }
 });
