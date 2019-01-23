@@ -37,6 +37,21 @@ sliders.forEach((slider) =>
         sliding = false;
     });
 
+
+    slider.onscroll = function ()
+    {
+        if (slider.scrollLeft == 0)
+            document.getElementById("left-scroll").style.display = "none";
+        else
+            document.getElementById("left-scroll").style.display = "inline-block";
+
+        if (slider.scrollLeft + 10 >= slider.scrollWidth - slider.clientWidth)
+            document.getElementById("right-scroll").style.display = "none";
+        else
+            document.getElementById("right-scroll").style.display = "inline-block";
+    };
+
+
     //Shouldn't do it here, but will say it's ok.
     document.getElementById("left-scroll").onclick = function()
     {
@@ -51,9 +66,6 @@ sliders.forEach((slider) =>
     {
         slider.scrollBy({ top: 0, left: slider.offsetWidth * 0.66, behavior: "smooth" });
         document.getElementById("left-scroll").style.display = "inline-block";
-
-        console.log("Offset: " + (slider.scrollWidth - slider.clientWidth));
-        console.log("Scroll: " + slider.scrollLeft);
 
         if (slider.scrollLeft + slider.offsetWidth * 0.66 + 10 >= slider.scrollWidth - slider.clientWidth)
             document.getElementById("right-scroll").style.display = "none";

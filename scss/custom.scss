@@ -36,9 +36,26 @@ h2
   overflow-x: auto;
   white-space: nowrap;
 
-  :hover
+  &:hover
   {
     cursor: pointer;
+
+    &::-webkit-scrollbar-thumb 
+    {
+      background-color: #999;
+      border-radius: 90px;
+
+      &:hover
+      {
+        background-color: rgb(134, 127, 127);
+      }
+    }
+  }
+
+  &::-webkit-scrollbar
+  {
+    height: 4px;
+    background: transparent;
   }
 }
 
@@ -48,4 +65,39 @@ h2
   height: 30rem;
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.scroller
+{
+  position: absolute;
+  top: 50%;
+  background-color: #E9E9EA;
+  border: none;
+  padding: 1.25rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: 12px;
+
+  &:hover
+  {
+    & > .fas
+    {
+      transform: scale(1.4);
+      cursor: pointer;
+    }
+    
+    & ~ .screenshots
+    {
+      &::-webkit-scrollbar-thumb 
+      {
+        background-color: #999;
+        border-radius: 90px;
+      }
+    }
+  }
+
+  .fas
+  {
+    transition: all .2s ease-in-out;
+  }
 }
