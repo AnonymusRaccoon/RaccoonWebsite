@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <title>MusicApp - RaccoonSDG</title>
-        <link rel="shortcut icon" type="image/png" href="../drawables/MusicApp/icon.png"/>
+        <link rel="shortcut icon" type="image/png" href="../drawables/MusicApp/icon.svg"/>
 
         <link rel="stylesheet" href="../scss/custom.css" type="text/css">
         <link rel="stylesheet" href="../style.css" type="text/css">
@@ -23,16 +23,16 @@
                     <div class="col-6 mx-auto">
                         <h1>MusicApp</h1>
                         <p>A music player for android whitch can play both youtube songs and local songs.</p>
-                        <a id="download" href="https://github.com/AnonymusRaccoon/MusicApp/releases/latest" ><button type="button" class="btn btn-outline-primary">Download</button></a>
+                        <a class="btn btn-outline-primary download-btn" href="https://github.com/AnonymusRaccoon/MusicApp/releases/latest">Download</a>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-2 mx-auto p-1 p-md-4 section-img">
-                        <img src="../drawables/MusicApp/icon.png" />
+                    <div class="col-md-6 order-md-2 mx-auto section-img">
+                        <img style="max-height: 35rem;" src="../drawables/MusicApp/Download.png" />
                     </div>
-                    <div class="col-md-6 text-center text-md-left">
+                    <div class="col-md-6 text-center text-md-left pt-2 pb-4">
                         <h2>Download songs / Sync playlists</h2>
                         <p>The app allow you to download the audio of any existing video on youtube. You can download songs one by one or you can download a whole playlist.
                         <br/><br/>You can also keep a playlist synced. So every update made to the youtube playlist will be applyed to your downloaded playlist.</p>
@@ -40,9 +40,9 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-6 mx-auto p-1 p-md-4 section-img">
-                        <img src="../drawables/MusicApp/icon.png" />
+                        <img src="../drawables/MusicApp/icon.svg" />
                     </div>
-                    <div class="col-md-6 text-center text-md-right">
+                    <div class="col-md-6 text-center text-md-right pt-5">
                         <h2>Chromecast <span class="badge badge-primary">Beta</span></h2>
                         <p>Controls playback with multiples devices all around your house. Don't let your friends fight again for the control of the bluetooth speaker.</p>
                     </div>
@@ -51,17 +51,18 @@
                 <div class="row align-items-center text-center pt-3 pb-3">
                     <div class="col">
                         <h2>Autoplay</h2>
-                        <img height="260" src="../drawables/MusicApp/Autoplay.jpg" />
-                        <p class="pt-4">Don't know what you want to play next? Don't worry, the app will choose for you.</p>
+                        <p>Don't know what you want to play next? Don't worry, the app will choose for you.</p>
+                        <img class="mb-5" height="260" src="../drawables/MusicApp/Autoplay.jpg" />
                     </div>
                     <div class="col">
                         <h2>Song mixes</h2>
                         <p>Play songs whitch are similar to the one you are playing. Kinda like youtube mixes.</p>
+                        <img class="mb-5" height="260" src="../drawables/MusicApp/Song-Mixes.jpg" />
                     </div>
                     <div class="col">
                         <h2>Artist mixes</h2>
-                        <img height="260" src="../drawables/MusicApp/Artist-Mixes.jpg" />
-                        <p class="pt-4">Create a mixes of songs made of a particular artists.</p>
+                        <p>Create a mixes of songs made of a particular artists.</p>
+                        <img class="mb-5" height="260" src="../drawables/MusicApp/Artist-Mixes.jpg" />
                     </div>
                 </div>
                 <hr>
@@ -75,9 +76,9 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid" style="background-color: darkslategray;">
+            <div class="container-fluid" style="background-color: rgb(88, 88, 88);">
                 <div class="row align-items-center text-center text-light pt-3 pb-3" style="position: relative;">
-                    <h1 class="pl-5">Screenshots</h1>
+                    <h1 class="pl-5 pb-2">Screenshots</h1>
                     <button class="scroller" id="left-scroll" style="left: 0; display: none;"><i class="fas fa-chevron-left"></i></button>
                     <button class="scroller" id="right-scroll" style="right: 0;"><i class="fas fa-chevron-right"></i></button>
                     <div class="screenshots">
@@ -90,6 +91,33 @@
                         <img class="screenshot" src="../drawables/MusicApp/Screenshots/7.jpg" ondragstart="return false;">
                         <img class="screenshot" src="../drawables/MusicApp/Screenshots/8.jpg" ondragstart="return false;">
                         <img class="screenshot" style="padding-right: 4rem;" src="../drawables/MusicApp/Screenshots/9.jpg" ondragstart="return false;">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2 mx-auto p-1 p-md-4 section-img">
+                        <img src="../drawables/Github.svg" />
+                    </div>
+                    <div class="col-md-6 text-center text-md-left py-md-3">
+                        <h2>Open Source</h2>
+                        <p>The full source code can be found on github. Feel free to report bugs, send message, request features or make pull request.</p>
+                        <div class="row">
+                            <a class="col-md btn btn-outline-primary w-100 h-100 mx-2 mb-2 py-md-3" href="https://github.com/AnonymusRaccoon/MusicApp">Browse Source</a>
+                            <a class="col-md btn btn-outline-primary w-100 h-100 mx-2 mb-2 py-md-3" href="https://github.com/AnonymusRaccoon/MusicApp/issues/new">Report or Ask</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6 my-auto p-1 section-img">
+                        <img src="../drawables/MusicApp/icon.svg" />
+                    </div>
+                    <div class="col-md-6 text-center text-md-left pt-5">
+                        <h2>Download the app</h2>
+                        <p>You can find the lastest version of the app here. After the download, the app will update automatically when a newer version will be out.</p>
+                        <div class="row">
+                            <a class="col-md btn btn-outline-primary w-100 h-100 mx-2 mb-2 py-md-3 download-btn" href="https://github.com/AnonymusRaccoon/MusicApp/releases/latest">Download</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,7 +136,7 @@
                 $.getJSON("https://api.github.com/repos/AnonymusRaccoon/MusicApp/releases/latest").done(function (release) 
                 {
                     var asset = release.assets[0];
-                    $("#download").attr("href", asset.browser_download_url);
+                    $(".download-btn").attr("href", asset.browser_download_url);
                 });
             });
         </script>
