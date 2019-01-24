@@ -78,6 +78,11 @@ h2
   padding-bottom: 2.5rem;
   border-radius: 12px;
 
+  &:focus
+  {
+    outline: none;
+  }
+
   &:hover
   {
     & > .fas
