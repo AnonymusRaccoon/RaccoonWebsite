@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <title>MusicApp - RaccoonSDG</title>
-        <link rel="shortcut icon" type="image/png" href="../drawables/MusicApp/icon.svg"/>
+        <link rel="shortcut icon" type="image/png" href="../drawables/MusicApp/icon.png"/>
 
         <link rel="stylesheet" href="../scss/custom.css" type="text/css">
         <link rel="stylesheet" href="../style.css" type="text/css">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
     </head>
     <body>
@@ -132,6 +132,11 @@
                 {
                     var asset = release.assets[0];
                     $(".download-btn").attr("href", asset.browser_download_url);
+                });
+
+                $(document).on("click touchstart", function()
+                {
+                    $(".mobile-nav").collapse("hide");
                 });
             });
         </script>
