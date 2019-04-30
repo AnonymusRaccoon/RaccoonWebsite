@@ -1,0 +1,20 @@
+{
+  "name": "raccoon-website",
+  "version": "1.0.0",
+  "description": "A website presenting my projects.",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "npm": "^6.9.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnonymusRaccoon/RaccoonWebsite.git"
+  },
+  "author": "Anonymus Raccoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnonymusRaccoon/RaccoonWebsite/issues"
+  },
+  "homepage": "https://github.com/AnonymusRaccoon/RaccoonWebsite#readme"
+}
