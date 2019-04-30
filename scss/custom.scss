@@ -111,3 +111,19 @@ h2
 {
   height: 100vh;
 }
+
+.icon
+{
+  color: #d3d3d3;
+
+  &:hover
+  {
+    color: #ffffff;
+  }
+
+  &:focus 
+  {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
