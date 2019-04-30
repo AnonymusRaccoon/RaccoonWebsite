@@ -10671,6 +10671,7 @@ h2 {
 
 .icon {
   color: #d3d3d3;
+  border: none;
 }
 
 .icon:hover {
@@ -10678,6 +10679,12 @@ h2 {
 }
 
 .icon:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
+.icon > i:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   outline: none !important;
