@@ -8,7 +8,7 @@
         <link rel="alternate" href="www.raccoon-sdg.fr/en/eau" hreflang="en" />
         <link rel="shortcut icon" type="image/png" href="../drawables/Eau/logo.png"/>
         <meta name="theme-color" content="#3949AB"/>
-        <meta name="Description" content="Eau est un launcher permettant de lancer tous les jeux peut impote leur launcher.">
+        <meta name="Description" content="Eau est un launcher permettant de lancer tous les jeux peu-importe leur launcher d'origine.">
 
         <link rel="stylesheet" href="../scss/custom.css" type="text/css">
 
@@ -20,102 +20,59 @@
         <header id="nav" style="height: 56px;"></header>
 
         <main role="main">
-            <div class="container-fluid cover" style="background-image: url(../drawables/Opus/Header.jpg);">
+            <div class="container-fluid cover" style="background-image: url(../drawables/Eau/Header.jpg);">
                 <div class="row align-items-center text-center text-light">
                     <div class="col-6 mx-auto">
-                        <h1>Opus</h1>
-                        <p>Un lecteur de musique pour android qui peut lire des musiques depuis youtube ou depuis des fichiers mp3.</p>
-                        <a class="btn btn-outline-primary download-btn" href="https://github.com/AnonymusRaccoon/Opus/releases/latest">Télécharger</a>
+                        <h1>Eau</h1>
+                        <p>Eau est un launcher permettant de lancer tous les jeux peu-importe leur launcher d'origine.</p>
+                        <a class="btn btn-outline-primary download-btn w-25" href="https://github.com/AnonymusRaccoon/Eau/releases/latest">Télécharger</a>
+                        <a class="btn btn-outline-primary download-btn w-25" href="https://eau.raccoon-sdg.fr">Consulter la version web</a>
                     </div>
                 </div>
             </div>
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 order-md-2 mx-auto section-img">
-                        <img style="max-height: 35rem;" src="../drawables/Opus/Download.png" />
+                        <img style="max-height: 35rem;" src="../drawables/Opus/Placeholder.png" />
                     </div>
                     <div class="col-md-6 text-center text-md-left pt-2 pb-4">
-                        <h2>Télécharger des musiques / Synchroniser des playlists</h2>
-                        <p>L'application vous permet de télécharger l'audio de n'importe quelle vidéo présente sur youtube. Vous pouvez télécharger les musiques une à une ou vous pouvez télécharger une playlist entiere.
-                        <br/><br/>Vous pouvez aussi garder une playlist synchronisée. A chaque fois qu'un changement est fait sur la playlist youtube, ces changements se mettent à jours localement sur votre téléphone.</p>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-6 mx-auto p-1 p-md-4 section-img">
-                        <img src="../drawables/Opus/Placeholder.png" style="max-width: 100%;" />
-                    </div>
-                    <div class="col-md-6 text-center text-md-right pt-5">
-                        <h2>Chromecast <span class="badge badge-primary">Beta</span></h2>
-                        <p>Contrôler la musique depuis plusieurs appareils dans l'intégralité de la maison. Ne laissez plus vos amis ce battre pour contrôler la musique.
-                        <br/><i>Pour le moment, le chromecast ne fonctione pas.</i>
-                        <br/><br/><i>PS : Les menus vont changer dans un futur proche donc il n'y a pas de screenshot pour le moment. A la place, vous pouvez observer ce magnifique raton laveur.</i></p>
-                    </div>
-                </div>
-                <hr style="height: 0.2rem">
-                <div class="row align-items-center text-center pt-3 pb-3">
-                    <div class="col">
-                        <h2>Autoplay</h2>
-                        <p>Vous ne savez pas quoi écouter après ? Ne vous en faites pas, l'application va trouver quelque chose pour vous.</p>
-                        <img class="mb-5" max-width="380" height="260" src="../drawables/Opus/Autoplay.jpg" />
-                    </div>
-                    <div class="col">
-                        <h2>Mix</h2>
-                        <p>Créer une playlist contenant des musiques similaires à celles que vous écoutez. Un peu comme les mixes youtubes.</p>
-                        <img class="mb-5" height="260" src="../drawables/Opus/Song-Mixes.jpg" />
-                    </div>
-                    <div class="col">
-                        <h2>Mix d'artiste</h2>
-                        <p>Créer une playlist avec les meilleurs musiques d'un artiste de votre choix.</p>
-                        <img class="mb-5" height="260" src="../drawables/Opus/Artist-Mixes.jpg" />
-                    </div>
-                </div>
-                <hr style="height: 0.1rem">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-left">
-                        <h2>Modifier les metadatas</h2>
-                        <p>Vous pouvez éditer manuellement les metadatas des musiques que vous avez localement ou vous pouvez télécharger ces métadatas directement depuis youtube.</p>
-                    </div>
-                    <div class="col-md-6 order-md-1 mx-auto section-img">
-                        <img class="img-fluid" style="max-height: 35rem;" src="../drawables/Opus/EditMetadata.jpg" />
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid" style="background-color: rgb(88, 88, 88);">
-                <div class="row align-items-center text-center text-light pt-3 pb-3" style="position: relative;">
-                    <h1 class="pl-5 pb-2">Screenshots</h1>
-                    <button class="scroller" id="left-scroll" style="left: 0; display: none;"><i class="fas fa-chevron-left"></i></button>
-                    <button class="scroller" id="right-scroll" style="right: 0;"><i class="fas fa-chevron-right"></i></button>
-                    <div class="screenshots">
-                        <img class="screenshot" style="padding-left: 4rem;" src="../drawables/Opus/Screenshots/1.jpg" ondragstart="return false;">
-                        <img class="screenshot" src="../drawables/Opus/Screenshots/2.jpg" ondragstart="return false;">
-                        <img class="screenshot" src="../drawables/Opus/Screenshots/3.jpg" ondragstart="return false;">
-                        <img class="screenshot" src="../drawables/Opus/Screenshots/4.jpg" ondragstart="return false;">
-                        <img class="screenshot" src="../drawables/Opus/Screenshots/5.jpg" ondragstart="return false;">
-                        <img class="screenshot" src="../drawables/Opus/Screenshots/6.jpg" ondragstart="return false;">
-                        <!-- <img class="screenshot" src="../drawables/Opus/Screenshots/7.jpg" ondragstart="return false;"> -->
-                        <img class="screenshot" src="../drawables/Opus/Screenshots/8.jpg" ondragstart="return false;">
-                        <img class="screenshot" style="padding-right: 4rem;" src="../drawables/Opus/Screenshots/9.jpg" ondragstart="return false;">
+                        <h2>Réunissez tous vos jeux au même endroit</h2>
+                        <p>L'application regroupe tous les launchers au même endroit.
+                        <br/><i>Pour le moment, seul Steam est supporté.</i></p>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="row text-center py-3">
-                    <div class="col-md">
-                        <img style="max-height: 330px;" class="svg" src="../drawables/Github.svg" />
-                        <h2 class="pt-2">Open Source</h2>
-                        <p>Le code source peut être trouvé sur github. N'hésitez pas a signaler les bugs, demander de nouvelles fonctionnalités ou faire des pull-requests.</p>
-                        <div class="row">
-                            <a class="col-md btn btn-outline-primary w-100 h-100 mx-2 mb-2 py-md-3" href="https://github.com/AnonymusRaccoon/Opus">Regarder le code</a>
-                            <a class="col-md btn btn-outline-primary w-100 h-100 mx-2 mb-2 py-md-3" href="https://github.com/AnonymusRaccoon/Opus/issues/new">Signaler ou Demander</a>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mx-auto section-img">
+                            <img style="max-height: 35rem;" src="../drawables/Opus/Placeholder.png" />
+                        </div>
+                        <div class="col-md-6 text-center text-md-right pt-2 pb-4">
+                            <h2>Jeux récement utiliés</h2>
+                            <p>L'application montre les jeux auquels vous avez joué recement. Gagnez du temps et ne les cherchez plus dans votre liste de jeux.</p>
                         </div>
                     </div>
-                    <div class="col-md">
-                        <img style="max-height: 330px;" src="../drawables/Opus/logo.svg" />
-                        <h2 class="pt-2">Télécharger l'application</h2>
-                        <p>Vous pouvez trouver la dernière version de l'application ici. Après l'avoir installée, Opus se mettra à jour automatiquement.</p>
-                        <div class="row">
-                            <a class="col-md btn btn-outline-primary w-100 h-100 mx-2 mb-2 py-md-3 download-btn" href="https://github.com/AnonymusRaccoon/Opus/releases/latest">Télécharger</a>
-                        </div>
+                </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2 mx-auto section-img">
+                        <img style="max-height: 35rem;" src="../drawables/Opus/Placeholder.png" />
+                    </div>
+                    <div class="col-md-6 text-center text-md-left pt-2 pb-4">
+                        <h2>Connectez vous avec vos launchers et l'application se souviendrat de vous</h2>
+                        <p>L'application utilise des cookies (si vousn utilisez l'interface web) ou utilise un fichier local pour les stockers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7 mx-auto section-img">
+                        <img class="align-left" style="max-width: 40rem;" src="../drawables/Eau/ProjectBoard.PNG" />
+                    </div>
+                    <div class="col-md-5 text-center text-md-right pt-2 pb-4">
+                        <h2>Progression détaillée</h2>
+                        <p>Nous utilisons un modèle de carnet de bord permettant de s'organiser rapidement et de voir instantanément ce qu'il y a à faire.</p>
+                        <a class="btn btn-outline-primary w-100 h-100 mx-2 mb-2 py-md-3" href="https://github.com/AnonymusRaccoon/EAU/projects/2">Consulter</a>
                     </div>
                 </div>
             </div>
@@ -128,14 +85,11 @@
         <script>
             $(function()
             {
-                $("#nav").load("/fragments/navBar.html");
-                $("#footer").load("/fragments/footer.html");
-
-                $.getJSON("https://api.github.com/repos/AnonymusRaccoon/Opus/releases/latest").done(function (release) 
+                $("#nav").load("/fragments/navBar.html", () => 
                 {
-                    var asset = release.assets[0];
-                    $(".download-btn").attr("href", asset.browser_download_url);
+                    $(".eau").addClass("active");
                 });
+                $("#footer").load("/fragments/footer.html");
 
                 $(document).on("click touchstart", function()
                 {

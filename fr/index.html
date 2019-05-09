@@ -128,7 +128,10 @@
         <script>
             $(function()
             {
-                $("#nav").load("/fragments/navBar.html");
+                $("#nav").load("/fragments/navBar.html", () => 
+                {
+                    $(".opus").addClass("active");
+                });
                 $("#footer").load("/fragments/footer.html");
 
                 $.getJSON("https://api.github.com/repos/AnonymusRaccoon/Opus/releases/latest").done(function (release) 
